@@ -10,6 +10,7 @@
 /*============section1==============*/
 body {
   background-color: black;
+  overflow-x: none;
 }
 
 html {
@@ -118,14 +119,6 @@ a {
   justify-content: space-evenly;
 }
 
-.container1-section2{
-
-}
-
-.container2-section2 {
-
-}
-
 .olhos1 {
   max-width: 100%;
   width: 600px;
@@ -166,6 +159,16 @@ li {
   justify-content: space-evenly;
   
 }
+
+.container2-section3{
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
 .container-sectio3{
  
   height: 900px;
@@ -184,88 +187,59 @@ li {
   text-align: center;
   font-size: 4vw
 }
-.h4-section3{
-  padding-left: 45px;
+.p-section3{
   color: #fff;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
 }
 
-/*
-#titulo {
-  color: #f1f1f1;
-}
-.caixa-text-img {
-  display: flex;
-  align-items: center;
-}
-
-.texto-section3 {
-  flex: 1;
-  color: #f1f1f1;
-}
-
-.img-section3 {
-  flex: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .img-section3 {
-    position: relative;
-    bottom: 10%;
-    left: 20%;
-  }
-}
-
-.paragrafo-sobre {
-  margin: 0;
-}
-@media screen and (max-width: 768px) {
-  .caixa-texto {
-    padding: 10px;
-    margin: 5px;
-  }
-}
-*/
 /*============section 4==============*/
 .background-section4 {
   width: 100%;
   height: 100%;
-  background-color: rgb(151, 146, 146);
+  background-image: linear-gradient(to bottom, #cccccc, #d4d4d4, #dddddd, #e5e5e5, #eeeeee);
 }
 
 .container1-section4 {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .container1-section4 h2 {
   font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: 200;
   color: #000;
 }
 
 .container1-section4 h4 {
   text-align: center;
+  margin-top: 10px;
   font-size: 20px;
-  font-style: italic;
-  font-weight: 800;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.container3-section4{
+  width: 550px;
 }
 
 /* Container das imagens da section4 */
 .container2-section4 {
   height: 100%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: space-evenly;
-  padding-left: 70px;
+  padding: 30px 50px;
 }
 
 /* Configuração do tamanho das imagens todas com o mesmo padrão */
 .container2-section4 img {
-  width: 480px;
-  padding-top: 7px;
+  width: 580px;
+  padding: 10px 20px;
   object-fit: cover;
 }
 
@@ -275,37 +249,42 @@ li {
 .section5{
   height: 900px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 
 }
 
-.container2-section3{
-  height: 900px;
+.container1-section5 {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 30px;
 }
 
-.h1-sectio5{
+.container2-section5 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.h1-section5{
   color: #fff;
-  text-align: center;
+  text-align: start;
   font-size: 4vw
 }
 
+.h2-section5 {
+
+}
 
 .h4-section5{
-  padding-left: 45px;
   color: #fff;
   font-size: 1.6vw;
 }
 
 
-.container1-section5{
-  height: 900px;
+.container3-section5{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -314,13 +293,14 @@ li {
 
 
 .video-section5{
-  padding-bottom: 100px;
+  display: flex;
+  width: 100%;
   align-items: center;
 }
 
 .video-section5 video{
-  width: 670px;
-  height: 600px;
+  width: 940px;
+  height: 800px;
 }
 
 /*============section6==============*/
@@ -328,28 +308,21 @@ li {
   background-color: #111111;
   height: 900px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  padding: 0 50px;
 }
 
-.container1-section6{
-  align-items: center;
-
+.container1-section6 div{
+  padding: 10px ;
 }
+
 
 .olhos1-section6{
   max-width: 100%;
-  width: 600px;
-  height: 300px;
+  width: 700px;
+  height: 350px;
 }
-
-.olhos2-section6{
-  max-width: 100%;
-  width: 600px;
-  height: 300px;
-}
-
 
 .container2-section6{
   align-items: center;
@@ -360,7 +333,6 @@ li {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   color: #f1f1f1;
-
 }
 
 .h4-1-section6{
@@ -368,6 +340,8 @@ li {
   font-size: large;
   text-align: center;
   color: #f1f1f1;
+  padding: 20px 0;
+  font-size: 1.4rem;
 }
 
 .h4-2-section6{
@@ -424,26 +398,42 @@ li {
 }
 
 
-.video-section8{
-  position: absolute;
-  background-size: cover;
+.container-video {
   width: 100%;
-  z-index: -100;
-  
+  height: 800px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.conteudo-section8{
-  padding-top: 40px;
+.container-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.video-section8{
+  background-size: cover;
+  object-fit: cover;
+  position: fixed;
+  height: 800px;
+  width: 100%;
+}
+
+.container2-section8{
   text-align: end;
-  margin: 50px;
   color: #f1f1f1;
   font-size: 19px;
   position: relative;
-  z-index: -1;
+  background-color: red;
 }
 
-.conteudo-section8 h1{
-  text-align: center;;
+.container2-section8 h1{
+  text-align: center;
   font-size: 56px;
-  margin-bottom: 20px;
 }
