@@ -7,9 +7,8 @@
 }
   }
 */
-/*============section1==============*/
 body {
-  background-color: black;
+  background-color: black ;
   overflow-x: none;
 }
 
@@ -17,7 +16,11 @@ html {
   overflow-x: none;
 }
 
+/*============section1==============*/
+
+
 .btn-1{
+  
   background-color: #9D8F73;
   padding: 10px 6px;
   border-radius: 10px;
@@ -42,6 +45,11 @@ html {
   position: relative;
 }
 
+.btn-1 a{
+  font-family: 'Geologica';
+  font-weight: bold;
+}
+
 .section1 div {
   margin-top: 280px;
 }
@@ -54,14 +62,16 @@ html {
 }
 
 .h4-1-section1{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 4vw;
+  font-weight: 1;
   margin: 0;
 }
 
 .h4-2-section1{
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 1;
   font-size: 2vw;
   margin: 0;
 }
@@ -73,7 +83,7 @@ html {
 }
 
 .title-section1 {
-  font-family: monospace;
+
   color: #f1f1f1;
   font-size: 4vw;
   text-align: center;
@@ -131,23 +141,31 @@ a {
   height: 300px;
 }
 
-h2 {
-  font-weight: 200;
-  font-style: italic;
+.container2-section2 h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: lighter;
+  color: #fff;
+  font-style: normal;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 3rem;
   line-height: 1;
   color: #f1f1f1;
 }
 
-li {
-  font-weight: 100;
+
+.container2-section2 li {
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 10px;
   font-style: italic;
+  padding: 10px 10px ;
   text-decoration: none;
   font-size: 30px;
   line-height: 1.1;
   color: #f1f1f1;
+  text-align: center;
 }
+
 
 /*============section3==============*/
 .section3{
@@ -182,14 +200,20 @@ li {
   align-items: flex-start;
 }
 
-.h1-sectio3{
+.h1-sectio3 {
+ font-weight: 200;
   color: #fff;
   text-align: center;
-  font-size: 4vw
+  font-size: 5rem
 }
+
+
 .p-section3{
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 10;
   color: #fff;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
 }
 
 /*============section 4==============*/
@@ -214,7 +238,17 @@ li {
   color: #000;
 }
 
-.container1-section4 h4 {
+.container1-section4  h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 20;
+
+}
+
+.container1-section4  h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 1;
+  font-style: normal;
   text-align: center;
   margin-top: 10px;
   font-size: 20px;
@@ -269,16 +303,27 @@ li {
 }
 
 .h1-section5{
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 10;
   color: #fff;
   text-align: start;
-  font-size: 4vw
+  font-size: 6rem
 }
 
+
+
 .h2-section5 {
+  font-family: 'Geologica';
+  font-style: normal;
+  font-weight:bold;
+  
 
 }
 
 .h4-section5{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 20;
   color: #fff;
   font-size: 1.6vw;
 }
@@ -330,12 +375,14 @@ li {
 }
 
 .h2-section6{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Geologica', sans-serif;
+  font-style: normal;
   text-align: center;
   color: #f1f1f1;
 }
 
 .h4-1-section6{
+  font-family: 'Josefin Sans', sans-serif; 
   margin: 0;
   font-size: large;
   text-align: center;
@@ -383,14 +430,29 @@ li {
   
 }
 
-.h4-section7{
-  padding-left: 45px;
+.h4-p-section7{
+  font-family: 'Josefin Sans';
+  padding-left: 30px;
   color: #fff;
-  font-size: 1.6vw;
+  font-size: 2rem;
 }
+
+.h4-section7{
+  font-weight: bold;
+  font-family: 'Geologica';
+  padding-left: 30px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+
+
 .img2-section7{
-  width: 500px;
+  width: 665px;
+  height: 630px;
 }
+
+
 
 /*==================section8==================*/
 .section8{
@@ -426,14 +488,209 @@ li {
 }
 
 .container2-section8{
+  width: 100%;
+  height: 100%;
   text-align: end;
   color: #f1f1f1;
   font-size: 19px;
   position: relative;
-  background-color: red;
 }
 
 .container2-section8 h1{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 1;
+  font-style: normal; 
   text-align: center;
   font-size: 56px;
+  
+}
+
+.container2-section8 p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem; 
+}
+
+.btn2{
+  
+  font-family: 'Geologica';
+  background-color: #9D8F73;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 200px;
+  cursor: pointer;
+
+}
+
+/*===================section9==============*/
+.section9 {
+  display: flex;
+  align-items: center;
+}
+
+.container2-section9 {
+  flex: 1;
+}
+
+.container1-section9 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-section9 {
+  padding-right: 20px;
+}
+
+.img-section9 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos adicionais para o restante do conteúdo */
+.h1-section9 {
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 1;
+  color: #eeeeee;
+  text-align: left;
+  font-size: 4rem;
+}
+
+.container3-section9 {
+  text-align: left;
+}
+
+.p-section9 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif; 
+  color: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.h3-section9{
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif; 
+  font-style: italic;
+  font-weight: 10;
+  color: #f1f1f1;
+}
+
+
+/*===================section10==============*/
+
+
+.btn-1{
+  
+  background-color: #9D8F73;
+  padding: 10px 6px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  max-width: 500px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.section10 {
+  background-image: url("IMG/img-section10.jpg");
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.btn-1 a{
+  font-family: 'Geologica';
+  font-weight: bold;
+}
+
+.section10 div {
+  margin-top: 280px;
+}
+
+.container1-section10{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h4-1-section10{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 4vw;
+  font-weight: 1;
+  margin: 0;
+}
+
+.h4-2-section10{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 1;
+  font-size: 2vw;
+  margin: 0;
+}
+
+.img-link{
+  width: 24px;
+  height: 16px;
+  transform: rotate(-50deg);
+}
+
+.title-section10 {
+
+  color: #f1f1f1;
+  font-size: 4vw;
+  text-align: center;
+}
+
+/* .comentario2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  color: #f1f1f1;
+  position: absolute;
+  bottom: 36vh;
+  left: 32vw;
+} */
+
+.link {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.black-effect{
+  height: 400px;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0,0,0,0) 100%, rgba(0,0,0,5) 0%);
+  width: 100%;
+  bottom: 0;
+}
+
+
+/*==================Textos configuração de estilos ============= */
+
+.textos-yellow{
+color:#d6b80f;
+}
+
+.texto-#C4B2A7{
+color:#C4B2A7;  
 }
