@@ -45,8 +45,9 @@ html {
 }
 
 .section1 {
-  background-image: url("IMG/incial.jpg");
+  background-image: url("imgs/incial.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 900px;
   display: flex;
   flex-direction: column;
@@ -97,6 +98,7 @@ html {
   color: #f1f1f1;
   font-size: 4vw;
   text-align: center;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .link {
@@ -107,6 +109,42 @@ html {
 
 a {
   text-decoration: none;
+}
+
+/* 
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  body {
+    background-color: yellow !important;
+  }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px){ 
+  body {
+    background-color: purple !important;
+  }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: navy !important;
+  }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) { 
+  body {
+    background-color: green !important;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  body {
+    background-color: red !important;
+  }
 }
 
 /*============section2==============*/
@@ -245,7 +283,7 @@ a {
   margin-top: 30px;
   margin-bottom: 0;
   font-weight: 200;
-  color: #000;
+  color: #222;
 }
 
 .container1-section4 h2 {
@@ -286,13 +324,29 @@ a {
   object-fit: cover;
 }
 
+@media (min-width: 992px) and (max-width: 1339px) {
+
+  .background-section4 {
+    height: 750px;
+  }
+
+  .container2-section4 { 
+    height: auto;
+  }
+
+  .container2-section4 img {
+    width: 420px;
+  }
+}
+
 /*===============section5=================*/
 
 .section5 {
   height: 900px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .container1-section5 {
@@ -300,7 +354,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 30px;
+  max-width: 600px;
 }
 
 .container2-section5 {
@@ -330,26 +384,24 @@ a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 20;
   color: #fff;
-  font-size: 1.6vw;
+  font-size: 1.6rem;
 }
 
 .container3-section5 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
-  width: 100%;
+  justify-content: center;
 }
 
 .video-section5 {
   display: flex;
-  width: 100%;
   align-items: center;
 }
 
 .video-section5 video {
-  width: 940px;
-  height: 800px;
+  max-width: 540px;
+  max-height: 800px;
 }
 
 /*============section6==============*/
@@ -432,41 +484,79 @@ a {
 
 /*==================section7==================*/
 .section7 {
-  background-image: url("IMG/img-section7\ \(2\).jpg");
+  background-image: url("imgs/img-section7\ \(2\).jpg");
   background-size: cover;
-  height: 900px;
+  background-position: center;
+  background-attachment: fixed;
+  height: 1000px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.container1-sectio7 {
+.container1-section7 {
   height: 900px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
+  width: 100%;
 }
 
-.h4-p-section7 {
-  font-family: "Josefin Sans";
-  padding-left: 30px;
-  color: #f4ede4;
-  font-size: 3rem;
+.container2-section7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
 }
 
-.h4-section7 {
+.p1-section7 {
   font-weight: bold;
   font-family: "Geologica";
   padding-left: 30px;
   color: #f4ede4;
   font-size: 3rem;
+  text-align: start;
 }
 
-.content-section8.img2-section7 {
+.p2-section7 {
+  font-family: "Josefin Sans";
+  padding-left: 30px;
+  color: #f4ede4;
+  font-size: 3rem;
+  text-align: start;
+  width: 50%;
+}
+
+.p3-section7 {
+  font-weight: bold;
+  font-family: "Geologica";
+  padding-left: 30px;
+  color: #f4ede4;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.img2-section7 {
   width: 665px;
   height: 630px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .p2-section7 {
+    width: 80%;
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) { 
+
+  .p2-section7 {
+    width: 80%;
+  }
 }
 
 /*==================section8==================*/
@@ -556,11 +646,11 @@ a {
 }
 
 .btn-2 {
-  background-color: #C4B2A7;
+  background-color: #c4b2a7;
   padding: 15px 10px;
   border-radius: 10px;
   border: none;
-  color: #000;
+  color: #222;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -600,27 +690,32 @@ a {
   justify-content: flex-end;
 }
 
-.img-section9 {
-  padding-right: 20px;
-}
-
 .img-section9 img {
   width: 100%;
-  height: 1000px;
+  height: 980px;
 }
 
 .content-p-section9 {
   display: flex;
   justify-content: start;
   height: 100%;
-  max-height: 200px;
+  max-height: 220px;
   padding: 0 30px;
+  margin: 30px 0;
 }
 
 .space {
   margin-right: 10px;
   background: #fff;
   height: 100%;
+  width: 5px;
+}
+
+.space-2 {
+  margin-right: 10px;
+  background: #fff;
+  height: 100%;
+  max-height: 170px;
   width: 5px;
 }
 
@@ -647,32 +742,85 @@ a {
 
 .h3-section9 {
   font-size: 3rem;
-  margin: 30px 0;
   font-family: "Josefin Sans", sans-serif;
   font-style: italic;
   font-weight: 10;
   color: #f1f1f1;
+  margin: 10px 0;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .p-section9 { 
+    font-size: 1.8rem;
+  }
+
+  .h3-section9 { 
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) { 
+  .p-section9 { 
+    font-size: 2.1rem;
+  }
+
+  .h3-section9 { 
+    font-size: 2.5rem;
+  }
 }
 
 /*===================section10==============*/
 
 .section10 {
-  background-image: url("IMG/img-section10.jpg");
+  background-image: url("imgs/img-section10.jpg");
   background-size: cover;
-  height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 
-.btn-1 a {
-  font-family: "Geologica";
-  font-weight: bold;
+.section10 div {
+  margin-top: 400px;
 }
 
-.section10 div {
-  margin-top: 280px;
+.btn-3 {
+  background-color: #9d8f73;
+  padding: 25px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  max-width: 600px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  transition: 0.5s all ease-in;
+  opacity: 1;
+}
+
+.btn-3:hover {
+  transform: scale(1.05);
+  filter: brightness(115%);
+  color: #fafafa;
+}
+
+.link-3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #222;
+}
+
+.img-link-3 {
+  width: 48px;
+  height: 32px;
+  transform: rotate(-50deg);
 }
 
 .container1-section10 {
@@ -683,26 +831,19 @@ a {
 }
 
 .h4-1-section10 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 4vw;
-  font-weight: 1;
+  font-family: "Josefin Sans", Verdana, sans-serif;
+  font-size: 3vw;
   margin: 0;
+  font-weight: 400;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .h4-2-section10 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: normal;
-  font-weight: 1;
   font-size: 2vw;
   margin: 0;
-}
-
-.img-link {
-  width: 24px;
-  height: 16px;
-  transform: rotate(-50deg);
 }
 
 .title-section10 {
@@ -721,12 +862,16 @@ a {
   text-decoration: none;
 }
 
-.black-effect {
-  height: 400px;
-  position: absolute;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 5) 0%);
-  width: 100%;
-  bottom: 0;
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .section10 {
+    height: 850px;
+  }
+
+  .section10 div {
+    margin-top: 350px;
+  }
+  
 }
 
 /*==================Textos configuração de estilos ============= */
