@@ -8,20 +8,21 @@
   }
 */
 body {
-  background-color: black ;
+  background-color: black;
   overflow-x: none;
+  padding: 0;
+  margin: 0;
 }
 
 html {
   overflow-x: none;
+  padding: 0;
 }
 
 /*============section1==============*/
 
-
-.btn-1{
-  
-  background-color: #9D8F73;
+.btn-1 {
+  background-color: #9d8f73;
   padding: 10px 6px;
   border-radius: 10px;
   border: none;
@@ -33,6 +34,14 @@ html {
   max-width: 500px;
   margin-top: 20px;
   cursor: pointer;
+  transition: 0.5s all ease-in;
+  opacity: 1;
+}
+
+.btn-1:hover {
+  transform: scale(1.05);
+  filter: brightness(115%);
+  color: #fafafa;
 }
 
 .section1 {
@@ -45,8 +54,8 @@ html {
   position: relative;
 }
 
-.btn-1 a{
-  font-family: 'Geologica';
+.btn-1 a {
+  font-family: "Geologica";
   font-weight: bold;
 }
 
@@ -54,51 +63,41 @@ html {
   margin-top: 280px;
 }
 
-.container1-section1{
+.container1-section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.h4-1-section1{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.h4-1-section1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 4vw;
   font-weight: 1;
   margin: 0;
 }
 
-.h4-2-section1{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.h4-2-section1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 1;
   font-size: 2vw;
   margin: 0;
 }
 
-.img-link{
+.img-link {
   width: 24px;
   height: 16px;
   transform: rotate(-50deg);
 }
 
 .title-section1 {
-
   color: #f1f1f1;
   font-size: 4vw;
   text-align: center;
 }
-
-/* .comentario2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 2vw;
-  text-align: center;
-  color: #f1f1f1;
-  position: absolute;
-  bottom: 36vh;
-  left: 32vw;
-} */
 
 .link {
   font-size: 1.2em;
@@ -110,108 +109,112 @@ a {
   text-decoration: none;
 }
 
-.black-effect{
-  height: 400px;
-  position: absolute;
-  background: linear-gradient(0deg, rgba(0,0,0,0) 100%, rgba(0,0,0,5) 0%);
-  width: 100%;
-  bottom: 0;
-}
-
 /*============section2==============*/
- 
-.section2{
+
+.section2 {
   background-color: #111111;
   height: 900px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.olhos1 {
-  max-width: 100%;
-  width: 600px;
-  height: 300px;
+.container1-section2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.olhos2 {
+.olhos {
   max-width: 100%;
-  width: 600px;
-  height: 300px;
+  width: 700px;
+  height: 350px;
+}
+
+.container2-section2 {
+  width: 50%;
 }
 
 .container2-section2 h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Josefin", "Times New Roman", Times, serif;
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 100;
   color: #fff;
   font-style: normal;
   text-decoration: none;
   font-size: 3rem;
   line-height: 1;
   color: #f1f1f1;
+
+  padding: 10px 30px;
 }
 
-
 .container2-section2 li {
-  font-family: 'Josefin Sans', sans-serif; 
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 10px;
   font-style: italic;
-  padding: 10px 10px ;
+  padding: 20px 5px;
   text-decoration: none;
   font-size: 30px;
   line-height: 1.1;
   color: #f1f1f1;
-  text-align: center;
+  text-align: start;
 }
 
+.container3-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+}
 
 /*============section3==============*/
-.section3{
-
-  height: 900px;
+.section3 {
+  height: 950px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  
 }
 
-.container2-section3{
+.container2-section3 {
   padding: 0 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  
 }
 
-.container-sectio3{
- 
+.container1-section3 {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.container-sectio3 {
   height: 900px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  
-}
-.img-section3{
-  align-items: flex-start;
 }
 
 .h1-sectio3 {
- font-weight: 200;
+  font-weight: 200;
   color: #fff;
   text-align: center;
-  font-size: 5rem
+  font-size: 5rem;
 }
 
-
-.p-section3{
-  font-family: 'Josefin Sans', sans-serif;
+.p-section3 {
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
-  font-weight: 10;
+  font-weight: 400;
   color: #fff;
   font-size: 1.6vw;
 }
@@ -219,8 +222,15 @@ a {
 /*============section 4==============*/
 .background-section4 {
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, #cccccc, #d4d4d4, #dddddd, #e5e5e5, #eeeeee);
+  height: 800px;
+  background-image: linear-gradient(
+    to bottom,
+    #cccccc,
+    #d4d4d4,
+    #dddddd,
+    #e5e5e5,
+    #eeeeee
+  );
 }
 
 .container1-section4 {
@@ -238,15 +248,14 @@ a {
   color: #000;
 }
 
-.container1-section4  h2{
-  font-family: 'Josefin Sans', sans-serif;
+.container1-section4 h2 {
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 20;
-
 }
 
-.container1-section4  h4 {
-  font-family: 'Josefin Sans', sans-serif;
+.container1-section4 h4 {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 1;
   font-style: normal;
   text-align: center;
@@ -256,7 +265,7 @@ a {
   font-weight: 600;
 }
 
-.container3-section4{
+.container3-section4 {
   width: 550px;
 }
 
@@ -265,7 +274,7 @@ a {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: flex-start;
   justify-content: space-evenly;
   padding: 30px 50px;
 }
@@ -277,15 +286,13 @@ a {
   object-fit: cover;
 }
 
-
 /*===============section5=================*/
 
-.section5{
+.section5 {
   height: 900px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
 }
 
 .container1-section5 {
@@ -302,113 +309,129 @@ a {
   justify-content: center;
 }
 
-.h1-section5{
-  font-family: 'Josefin Sans', sans-serif;
+.h1-section5 {
+  font-family: "Josefin Sans", sans-serif;
   font-style: normal;
-  font-weight: 10;
-  color: #fff;
+  font-weight: 400;
+  color: #f4ede4;
   text-align: start;
-  font-size: 6rem
+  font-size: 6rem;
 }
-
-
 
 .h2-section5 {
-  font-family: 'Geologica';
+  font-family: "Geologica";
   font-style: normal;
-  font-weight:bold;
-  
-
+  font-weight: bold;
+  color: #f4ede4;
+  font-size: 3rem;
 }
 
-.h4-section5{
-  font-family: 'Josefin Sans', sans-serif;
+.h4-section5 {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 20;
   color: #fff;
   font-size: 1.6vw;
 }
 
-
-.container3-section5{
+.container3-section5 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: end;
+  width: 100%;
 }
 
-
-.video-section5{
+.video-section5 {
   display: flex;
   width: 100%;
   align-items: center;
 }
 
-.video-section5 video{
+.video-section5 video {
   width: 940px;
   height: 800px;
 }
 
 /*============section6==============*/
-.section6{
+.section6 {
   background-color: #111111;
   height: 900px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0 50px;
+  justify-content: space-around;
+  overflow-x: hidden;
 }
 
-.container1-section6 div{
-  padding: 10px ;
+.container1-section6 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.container1-section6 div {
+  padding: 10px;
+}
 
-.olhos1-section6{
+.olhos1-section6 {
   max-width: 100%;
   width: 700px;
   height: 350px;
 }
 
-.container2-section6{
-  align-items: center;
-  
+.container3-section6 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0 30px;
+  width: 90%;
 }
 
-.h2-section6{
-  font-family: 'Geologica', sans-serif;
+.container2-section6 {
+  width: 50%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2-section6 {
+  font-family: "Geologica", sans-serif;
   font-style: normal;
   text-align: center;
   color: #f1f1f1;
+  font-size: 3rem;
 }
 
-.h4-1-section6{
-  font-family: 'Josefin Sans', sans-serif; 
+.h4-1-section6 {
+  font-family: "Josefin Sans", sans-serif;
   margin: 0;
   font-size: large;
-  text-align: center;
+  text-align: end;
   color: #f1f1f1;
   padding: 20px 0;
-  font-size: 1.4rem;
+  font-size: 2.7rem;
 }
 
-.h4-2-section6{
+.h4-2-section6 {
   margin: 0;
   font-size: large;
   text-align: center;
   color: #f1f1f1;
-
 }
 
-.h4-3-section6{
+.h4-3-section6 {
   margin: 0;
-  font-size:large;
+  font-size: large;
   text-align: center;
   color: #f1f1f1;
-
 }
 
 /*==================section7==================*/
-.section7{
+.section7 {
   background-image: url("IMG/img-section7\ \(2\).jpg");
   background-size: cover;
   height: 900px;
@@ -416,49 +439,39 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
- 
-
 }
 
-.container1-sectio7{
- 
+.container1-sectio7 {
   height: 900px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  
 }
 
-.h4-p-section7{
-  font-family: 'Josefin Sans';
+.h4-p-section7 {
+  font-family: "Josefin Sans";
   padding-left: 30px;
-  color: #fff;
-  font-size: 2rem;
+  color: #f4ede4;
+  font-size: 3rem;
 }
 
-.h4-section7{
+.h4-section7 {
   font-weight: bold;
-  font-family: 'Geologica';
+  font-family: "Geologica";
   padding-left: 30px;
-  color: #fff;
-  font-size: 2rem;
+  color: #f4ede4;
+  font-size: 3rem;
 }
 
-
-
-.img2-section7{
+.content-section8.img2-section7 {
   width: 665px;
   height: 630px;
 }
 
-
-
 /*==================section8==================*/
-.section8{
-  
+.section8 {
 }
-
 
 .container-video {
   width: 100%;
@@ -466,8 +479,27 @@ a {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
+}
+
+.container3-section8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 30px;
+  z-index: 999;
+}
+
+.content-section8 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .container-video video {
@@ -477,9 +509,10 @@ a {
   object-fit: cover;
   width: 100%;
   height: 800px;
+  z-index: 1;
 }
 
-.video-section8{
+.video-section8 {
   background-size: cover;
   object-fit: cover;
   position: fixed;
@@ -487,53 +520,78 @@ a {
   width: 100%;
 }
 
-.container2-section8{
-  width: 100%;
-  height: 100%;
+.container2-section8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: end;
   color: #f1f1f1;
   font-size: 19px;
-  position: relative;
+  width: 50%;
 }
 
-.container2-section8 h1{
-  font-family:'Courier New', Courier, monospace;
-  font-weight: 1;
-  font-style: normal; 
+.title-section8 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
-  font-size: 56px;
-  
+  font-size: 4rem;
+  color: #fff;
 }
 
-.container2-section8 p{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 2rem; 
+.container2-section8 p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
 }
 
-.btn2{
-  
-  font-family: 'Geologica';
-  background-color: #9D8F73;
+.dark {
+  background-color: #11111190;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.btn-2 {
+  background-color: #C4B2A7;
+  padding: 15px 10px;
   border-radius: 10px;
   border: none;
-  color: #fff;
+  color: #000;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 80px;
-  width: 200px;
+  max-width: 500px;
+  margin-top: 20px;
   cursor: pointer;
+  transition: 0.5s all ease-in;
+  opacity: 1;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.btn-2:hover {
+  transform: scale(1.05);
+  filter: brightness(115%);
+  color: #111;
 }
 
 /*===================section9==============*/
 .section9 {
   display: flex;
-  align-items: center;
+  height: 100%;
 }
 
 .container2-section9 {
   flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 40px;
 }
 
 .container1-section9 {
@@ -548,12 +606,27 @@ a {
 
 .img-section9 img {
   width: 100%;
-  height: auto;
+  height: 1000px;
+}
+
+.content-p-section9 {
+  display: flex;
+  justify-content: start;
+  height: 100%;
+  max-height: 200px;
+  padding: 0 30px;
+}
+
+.space {
+  margin-right: 10px;
+  background: #fff;
+  height: 100%;
+  width: 5px;
 }
 
 /* Estilos adicionais para o restante do conteúdo */
 .h1-section9 {
-  font-family: 'Josefin Sans', sans-serif; 
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 1;
   color: #eeeeee;
   text-align: left;
@@ -565,41 +638,23 @@ a {
 }
 
 .p-section9 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif; 
+  font-family: "Josefin Sans", sans-serif;
   color: #f1f1f1;
   margin-bottom: 10px;
 }
 
-.h3-section9{
-  font-size: 2rem;
-  margin: 0;
-  font-family: 'Josefin Sans', sans-serif; 
+.h3-section9 {
+  font-size: 3rem;
+  margin: 30px 0;
+  font-family: "Josefin Sans", sans-serif;
   font-style: italic;
   font-weight: 10;
   color: #f1f1f1;
 }
 
-
 /*===================section10==============*/
-
-
-.btn-1{
-  
-  background-color: #9D8F73;
-  padding: 10px 6px;
-  border-radius: 10px;
-  border: none;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  max-width: 500px;
-  margin-top: 20px;
-  cursor: pointer;
-}
 
 .section10 {
   background-image: url("IMG/img-section10.jpg");
@@ -611,8 +666,8 @@ a {
   position: relative;
 }
 
-.btn-1 a{
-  font-family: 'Geologica';
+.btn-1 a {
+  font-family: "Geologica";
   font-weight: bold;
 }
 
@@ -620,51 +675,41 @@ a {
   margin-top: 280px;
 }
 
-.container1-section10{
+.container1-section10 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.h4-1-section10{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.h4-1-section10 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 4vw;
   font-weight: 1;
   margin: 0;
 }
 
-.h4-2-section10{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.h4-2-section10 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 1;
   font-size: 2vw;
   margin: 0;
 }
 
-.img-link{
+.img-link {
   width: 24px;
   height: 16px;
   transform: rotate(-50deg);
 }
 
 .title-section10 {
-
   color: #f1f1f1;
   font-size: 4vw;
   text-align: center;
 }
-
-/* .comentario2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 2vw;
-  text-align: center;
-  color: #f1f1f1;
-  position: absolute;
-  bottom: 36vh;
-  left: 32vw;
-} */
 
 .link {
   font-size: 1.2em;
@@ -676,21 +721,20 @@ a {
   text-decoration: none;
 }
 
-.black-effect{
+.black-effect {
   height: 400px;
   position: absolute;
-  background: linear-gradient(0deg, rgba(0,0,0,0) 100%, rgba(0,0,0,5) 0%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 5) 0%);
   width: 100%;
   bottom: 0;
 }
 
-
 /*==================Textos configuração de estilos ============= */
 
-.textos-yellow{
-color:#d6b80f;
+.textos-yellow {
+  color: #d6b80f;
 }
 
-.texto-#C4B2A7{
-color:#C4B2A7;  
+.texto-yellow-section7 {
+  color: #c4b2a7;
 }
