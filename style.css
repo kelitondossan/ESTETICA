@@ -7,6 +7,14 @@
 }
   }
 */
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('fonts/The\ Seasons\ Light.ttf') format('woff2'),
+       url('caminho/para/fonte/arquivo.woff') format('woff');
+}
+
+
 body {
   background-color: black;
   overflow-x: none;
@@ -178,7 +186,7 @@ a {
 }
 
 .container2-section2 h2 {
-  font-family: "Josefin", "Times New Roman", Times, serif;
+  font-family: 'The Seasons';
   font-style: normal;
   font-weight: 100;
   color: #fff;
@@ -210,6 +218,35 @@ a {
   justify-content: flex-start;
   width: 80%;
 }
+
+
+@media (min-width: 576px) { 
+ 
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px){ 
+
+  .container2-section2 {
+    width: 40%;
+  }
+
+  .container2-section2 li {
+    font-size: 1.4rem;
+  }
+ 
+  .container2-section2 h2 {
+    font-size: 2rem;
+  }
+   
+  .olhos{
+    width: 500px;
+    height: 250px;
+  }
+
+}
+
+
 
 /*============section3==============*/
 .section3 {
@@ -243,7 +280,9 @@ a {
 }
 
 .h1-sectio3 {
-  font-weight: 200;
+  
+  font-family: 'The Seasons';
+  font-weight:100;
   color: #fff;
   text-align: center;
   font-size: 5rem;
@@ -256,6 +295,28 @@ a {
   color: #fff;
   font-size: 1.6vw;
 }
+
+
+@media (min-width: 576px) { 
+ 
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px){ 
+
+  .h1-sectio3{
+    font-size: 2rem;
+  }
+  .container1-section3{
+    height: 90%;
+  }
+  .container1-section3{
+    width: 80%;
+  }
+ }
+
+
+
 
 /*============section 4==============*/
 .background-section4 {
@@ -279,33 +340,39 @@ a {
 }
 
 .container1-section4 h2 {
-  font-size: 60px;
+  font-family: 'The Seasons';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.7rem;
   margin-top: 30px;
   margin-bottom: 0;
-  font-weight: 200;
   color: #222;
+
 }
 
 .container1-section4 h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-style: normal;
-  font-weight: 20;
+
+  
+ 
 }
 
 .container1-section4 h4 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 1;
-  font-style: normal;
+  font-family: 'The Seasons';
+  font-weight: 400;
+  font-style:  inherit;
   text-align: center;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 1.7rem;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 .container3-section4 {
   width: 550px;
 }
+
+
+
 
 /* Container das imagens da section4 */
 .container2-section4 {
@@ -322,6 +389,41 @@ a {
   width: 580px;
   padding: 10px 20px;
   object-fit: cover;
+}
+
+@media (min-width: 576px) { 
+ 
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px){ 
+
+  .container1-section4 h2 {
+    font-size: 1.5rem; 
+  }
+
+  .container1-section4 h4 {
+    
+    font-size: 1rem;
+    
+  }
+
+  .container2-section4 img{
+    width: 250px;
+  }
+
+   
+  .background-section4 {
+    height: 750px;
+  }
+
+  .container2-section4 { 
+    height: auto;
+  }
+
+  .container2-section4 img {
+    width: 320px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1339px) {
@@ -364,12 +466,12 @@ a {
 }
 
 .h1-section5 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'The Seasons';
   font-style: normal;
-  font-weight: 400;
+  font-weight: initial;
   color: #f4ede4;
   text-align: start;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .h2-section5 {
@@ -403,6 +505,38 @@ a {
   max-width: 540px;
   max-height: 800px;
 }
+
+@media (min-width: 576px) { 
+  .container1-section5{
+    max-width: 400px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px){ 
+
+  .container1-section5{
+    max-width: 300px;
+    text-align: start;
+  }
+  
+  .h4-section5 {
+    font-size: 1.2rem;
+  }
+
+  .h1-section5 {
+   
+    font-size: 4rem;
+  }
+  
+  .h2-section5 {
+  
+    font-size: 2.5rem;
+  }
+
+}
+
+
 
 /*============section6==============*/
 .section6 {
@@ -482,6 +616,44 @@ a {
   color: #f1f1f1;
 }
 
+
+@media (min-width: 576px) { 
+  
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px){ 
+  .section6 {
+   
+   
+}
+
+.h2-section6 {
+
+  font-size: 2rem;
+}
+
+.h4-1-section6 {
+ 
+  font-size: 1.8rem;
+}
+
+.h4-2-section6 {
+  
+}
+
+.h4-3-section6 {
+
+  
+}
+
+
+}
+
+
+
+
 /*==================section7==================*/
 .section7 {
   background-image: url("imgs/img-section7\ \(2\).jpg");
@@ -531,6 +703,7 @@ a {
   width: 50%;
 }
 
+
 .p3-section7 {
   font-weight: bold;
   font-family: "Geologica";
@@ -545,9 +718,40 @@ a {
   height: 630px;
 }
 
+@media (min-width: 576px) { 
+ 
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px){ 
+.p1-section7 {
+  font-size: 1.8rem;
+
+}
+
+.img2-section7 {
+  width: 465px;
+  height: 530px;
+}
+
+  .p2-section7{
+  font-size: 1.8rem;
+ 
+}
+
+.p3-section7 {
+  font-size: 1.6rem;
+ } 
+
+
+}
+
+
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .p2-section7 {
-    width: 80%;
+    width: 50%;
   }
 
 }
@@ -555,7 +759,7 @@ a {
 @media (min-width: 1200px) and (max-width: 1399px) { 
 
   .p2-section7 {
-    width: 80%;
+    width: 50%;
   }
 }
 
@@ -621,7 +825,7 @@ a {
 }
 
 .title-section8 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'The Seasons';
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -721,7 +925,7 @@ a {
 
 /* Estilos adicionais para o restante do conteúdo */
 .h1-section9 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'The Seasons';
   font-weight: 1;
   color: #eeeeee;
   text-align: left;
@@ -744,9 +948,23 @@ a {
   font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
   font-style: italic;
-  font-weight: 10;
+  font-weight: 300;
   color: #f1f1f1;
   margin: 10px 0;
+}
+
+@media (min-width: 576px) { 
+ 
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px){ 
+ .h3-section9{
+  font-size: 1.6rem;
+ }
+ .p-section9 { 
+  font-size: 1.5rem;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -831,7 +1049,7 @@ a {
 }
 
 .h4-1-section10 {
-  font-family: "Josefin Sans", Verdana, sans-serif;
+  font-family: 'The Seasons';
   font-size: 3vw;
   margin: 0;
   font-weight: 400;
@@ -839,8 +1057,7 @@ a {
 }
 
 .h4-2-section10 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'The Seasons';
   font-style: normal;
   font-size: 2vw;
   margin: 0;
